@@ -39,10 +39,10 @@ var player2Id = id;
       var connected_msg = '<b>' + nickname + ' is now connected.</b>';
  
       io.sockets.volatile.emit('broadcast_msg', connected_msg);
-	for (var i=0;i<messages.length;i++)
-	{
-	socket.emit('broadcast_msg', messages);
-	}
+for (var i=0;i<messages.length;i++)
+{
+socket.emit('broadcast_msg', messages);
+}
     });
   });
  
